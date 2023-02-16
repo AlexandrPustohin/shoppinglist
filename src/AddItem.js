@@ -32,24 +32,24 @@ function AddItem(props) {
     return (
         <div>
             <Button variant="outlined" onClick={handleOpen}>
-                Add Item
+                Добавить в набор
             </Button>
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>New Item</DialogTitle>
+                <DialogTitle>Добавление нового продукта</DialogTitle>
                 <DialogContent>
                     <TextField value={item.product} margin="dense"
                         onChange={handleChange} name="product"
-                        label="Product" fullWidth />
+                        label="Продукт" fullWidth />
                     <TextField value={item.amount} margin="dense"
                         onChange={handleChange} name="amount"
-                        label="Amount" fullWidth />
+                        label="Количество" fullWidth />
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>
-                        Cancel
+                        Отмена
                     </Button>
                     <Button onClick={addItem}>
-                        Add
+                        Добавить
                     </Button>
                 </DialogActions>
             </Dialog>
